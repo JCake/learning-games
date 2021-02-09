@@ -77,7 +77,7 @@
 <div class="content" role="main">
 <form (submit)="checked ? giveProblem() : checkAnswer()">
     <span class="problem">{{num1}} {{operator}} {{num2}} = 
-        <input type="number" size="5" [(ngModel)]="givenAnswer" name="givenAnswer" autofocus/>
+        <input type="number" class="input-number" [(ngModel)]="givenAnswer" name="givenAnswer" autofocus/>
     <button type="submit" *ngIf="!checked">OK</button></span>
     <ng-container *ngIf="checked">
         <mat-icon *ngIf="correct" class="checked-icon">checkmark</mat-icon>
