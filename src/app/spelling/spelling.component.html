@@ -80,7 +80,7 @@
         <mat-icon aria-hidden="false" aria-label="Play" class="play-icon">play_arrow_filled</mat-icon>
     </button>
     <div style="padding-top: 3em;">
-        <form (submit)="checked ? play() : check()">
+        <form (submit)="checked || !spelledWord ? play() : check()">
             <input type="text" [(ngModel)]="spelledWord" name="spelledWord" />
             <button mat-button  type="submit" *ngIf="!checked" class="check-button">OK</button>
             <ng-container *ngIf="checked">

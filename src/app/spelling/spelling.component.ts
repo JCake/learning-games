@@ -14,7 +14,7 @@ level = 0;
   ['love','hug','talk','yell','child','home','tree', 'jump', 'sell', 'said'],
  ['school', 'people', 'smart', 'chore', 'choose', 'mother', 'father', 'brick', 'date','tooth'],
   ['phone','black','truck','about','these','first','they','thing','stuck','mind','people','mug'],
-  ['block','wig','other','wood','words','roof','luck','who','with','what','shell'],
+  ['block','wig','other','wood','words','roof','luck','with','what','shell'],
   ['four','bright','warm','nerves','animal','because','fight','germ','another','listen','pride','disk'],
   ['citizen','color','stamp','little','again','corn','eggs','house','length','height'],
   ['close','person','particle','taught','pond','city','point','pencil','laundry','highest','compare','group']];
