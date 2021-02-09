@@ -11,7 +11,7 @@ level = 0;
   words = [
     ['cat','dog','mom','dad','in','on','you','his','her','bat','sad','mad'],
     ['six','five','more','word','long','wash','open','sit','let','pig','glad'],
-  ['love','hug','talk','yell','child','home','tree', 'jump', 'sell', 'sun', 'said'],
+  ['love','hug','talk','yell','child','home','tree', 'jump', 'sell', 'said'],
  ['school', 'people', 'smart', 'chore', 'choose', 'mother', 'father', 'brick', 'date','tooth'],
   ['phone','black','truck','about','these','first','they','thing','stuck','mind','people','mug'],
   ['block','wig','other','wood','words','roof','luck','who','with','what','shell'],

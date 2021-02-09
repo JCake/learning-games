@@ -6,6 +6,8 @@ import {MatIconModule} from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 import { SpellingComponent } from './spelling/spelling.component';
 import { MathComponent } from './math/math.component';
+import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { MathComponent } from './math/math.component';
   imports: [
     BrowserModule,
     MatIconModule,
-    FormsModule
+    FormsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

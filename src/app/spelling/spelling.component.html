@@ -76,11 +76,13 @@
 
 <div class="content" role="main">
     <span>Score: {{score}}</span>
-    <mat-icon aria-hidden="false" aria-label="Play" class="play-button" (click)="play()">play_arrow_filled</mat-icon>
+    <button mat-fab (click)="play()" class="play-button" >
+        <mat-icon aria-hidden="false" aria-label="Play" class="play-icon">play_arrow_filled</mat-icon>
+    </button>
     <div style="padding-top: 3em;">
-        <form (submit)="check()">
+        <form (submit)="checked ? play() : check()">
             <input type="text" [(ngModel)]="spelledWord" name="spelledWord" />
-            <button type="submit" *ngIf="!checked">OK</button>
+            <button mat-button  type="submit" *ngIf="!checked" class="check-button">OK</button>
             <ng-container *ngIf="checked">
                 <mat-icon *ngIf="correct" class="checked-icon">checkmark</mat-icon>
                 <mat-icon *ngIf="!correct" class="checked-icon">close</mat-icon>

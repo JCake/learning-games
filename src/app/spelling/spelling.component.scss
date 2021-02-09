@@ -1,9 +1,19 @@
 .play-button {
-  font-size: 3em;
+  margin-top: 8px;
 }
 .play-button:hover {
   cursor: pointer;
 }
+.play-icon {
+  font-size: 36pt;
+  position: absolute;
+  top: 8%;
+  left: 10%;
+}
 .checked-icon {
   vertical-align: middle;
+}
+.check-button {
+  vertical-align: middle;
+  margin-left: 8px;
 }

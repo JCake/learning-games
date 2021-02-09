@@ -78,7 +78,7 @@
 <form (submit)="checked ? giveProblem() : checkAnswer()">
     <span class="problem">{{num1}} {{operator}} {{num2}} = 
         <input type="number" class="input-number" [(ngModel)]="givenAnswer" name="givenAnswer" autofocus/>
-    <button type="submit" *ngIf="!checked">OK</button></span>
+    <button mat-button type="submit" *ngIf="!checked" class="check-button">OK</button></span>
     <ng-container *ngIf="checked">
         <mat-icon *ngIf="correct" class="checked-icon">checkmark</mat-icon>
         <mat-icon *ngIf="!correct" class="checked-icon">close</mat-icon>
@@ -87,7 +87,7 @@
         {{num1 + num2}}
     </div>
     <div *ngIf="checked">
-        <button type="button" (click)="giveProblem()">Next</button>
+        <button mat-button type="button" (click)="giveProblem()">Next</button>
     </div>
 </form>
 </div>
