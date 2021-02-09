@@ -41,7 +41,10 @@ level = 0;
       const wordsForLevel = this.words[this.level];
       this.toSpell = wordsForLevel[Math.floor(Math.random() * wordsForLevel.length)];
     } else {
-      this.voice = (this.voice + 1) % 5;
+      this.voice = (this.voice + 1) % 6;
+      if(this.voice === 2){ // Skip this bad one
+        this.voice = 3;
+      }
     }
 
     const utterThis = new SpeechSynthesisUtterance(this.toSpell);
@@ -56,7 +59,7 @@ level = 0;
 
   check() {
     if(!this.checked){
-      this.correct = (this.spelledWord && this.spelledWord.trim() === this.toSpell);
+      this.correct = (this.spelledWord && this.spelledWord.trim().toLowerCase() === this.toSpell);
       this.score += this.correct ? 1 : 0;
       this.checked = true;
       this.spoke = false;
