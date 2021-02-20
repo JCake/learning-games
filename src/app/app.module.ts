@@ -7,13 +7,15 @@ import { FormsModule } from '@angular/forms';
 import { SpellingComponent } from './spelling/spelling.component';
 import { MathComponent } from './math/math.component';
 import {MatButtonModule} from '@angular/material/button';
+import { ArtComponent } from './art/art.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SpellingComponent,
-    MathComponent
+    MathComponent,
+    ArtComponent
   ],
   imports: [
     BrowserModule,

@@ -287,8 +287,14 @@
 <div class="toolbar">
   <button class="toolbar-button" (click)="mode = 'spelling'">Spelling</button>
   <button class="toolbar-button" (click)="mode = 'math'">Math</button>
+  <button class="toolbar-button" (click)="mode = 'art'">Art</button>
 </div>
-<app-spelling *ngIf="mode === 'spelling'"></app-spelling>
-<app-math *ngIf="mode === 'math'"></app-math>
+<ng-container [ngSwitch]="mode">
+  <app-spelling *ngSwitchCase="'spelling'"></app-spelling>
+  <app-math *ngSwitchCase="'math'"></app-math>
+  <div *ngSwitchCase="'art'" class="art-container">
+    <app-art></app-art>
+  </div>
+</ng-container>
 
 

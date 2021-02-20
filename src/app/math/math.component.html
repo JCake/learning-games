@@ -84,7 +84,7 @@
         <mat-icon *ngIf="!correct" class="checked-icon">close</mat-icon>
     </ng-container>
     <div *ngIf="checked && !correct">
-        {{num1 + num2}}
+        {{correctAnswer}}
     </div>
     <div *ngIf="checked">
         <button mat-button type="button" (click)="giveProblem()">Next</button>

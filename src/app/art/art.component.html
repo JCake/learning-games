@@ -1,0 +1,7 @@
+<h2>Mix some DIGITAL colors!</h2>
+<div class="colors-div">
+    <input id="colorInput1" type="color" [(ngModel)]="selectedColor1" (change)="update()"/> + 
+    <input id="colorInput2" type="color" [(ngModel)]="selectedColor2" (change)="update()"/> = 
+    <div [ngStyle]="{'background-color': mixedColor}" style="width: 50px; height: 20px; display:inline-block">&nbsp;</div>
+</div>
+
