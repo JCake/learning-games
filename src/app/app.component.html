@@ -287,13 +287,17 @@
 <div class="toolbar">
   <button class="toolbar-button" (click)="mode = 'spelling'">Spelling</button>
   <button class="toolbar-button" (click)="mode = 'math'">Math</button>
-  <button class="toolbar-button" (click)="mode = 'art'">Art</button>
+  <button class="toolbar-button" (click)="mode = 'chemistry'">Chemistry</button>
+  <button class="toolbar-button" (click)="mode = 'art'">Digital Art</button>
 </div>
 <ng-container [ngSwitch]="mode">
   <app-spelling *ngSwitchCase="'spelling'"></app-spelling>
   <app-math *ngSwitchCase="'math'"></app-math>
-  <div *ngSwitchCase="'art'" class="art-container">
+  <div *ngSwitchCase="'art'" class="segment-container">
     <app-art></app-art>
+  </div>
+  <div *ngSwitchCase="'chemistry'" class="segment-container">
+    <app-chemistry></app-chemistry>
   </div>
 </ng-container>
 

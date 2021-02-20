@@ -8,6 +8,7 @@ import { SpellingComponent } from './spelling/spelling.component';
 import { MathComponent } from './math/math.component';
 import {MatButtonModule} from '@angular/material/button';
 import { ArtComponent } from './art/art.component';
+import { ChemistryComponent } from './chemistry/chemistry.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ArtComponent } from './art/art.component';
     AppComponent,
     SpellingComponent,
     MathComponent,
-    ArtComponent
+    ArtComponent,
+    ChemistryComponent
   ],
   imports: [
     BrowserModule,

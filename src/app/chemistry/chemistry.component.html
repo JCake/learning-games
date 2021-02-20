@@ -1,0 +1,8 @@
+<form (submit)="checked ? nextProblem() : check()" class="chemistry-form">
+    <span>Enter the symbol for element {{elementName}}: </span> <input [(ngModel)]="enteredSymbol" name="symbol" size="5"/>
+    <div *ngIf="checked">
+        <span *ngIf="correct">CORRECT!</span>
+        <span *ngIf="!correct">Nope.  It was {{correctSymbol}}</span>
+    </div>
+</form>
+
