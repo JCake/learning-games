@@ -75,9 +75,13 @@
 </style>
 
 <div class="content" role="main">
+<div>
+    <label>Level: </label>
+    <input type="number" [(ngModel)]="level" name="level" (change)="giveProblem()" class="level-input"/>
+</div>
 <form (submit)="checked ? giveProblem() : checkAnswer()">
     <span class="problem">{{num1}} {{operator}} {{num2}} = 
-        <input type="number" class="input-number" [(ngModel)]="givenAnswer" name="givenAnswer" autofocus/>
+        <input type="number" class="input-number" [(ngModel)]="givenAnswer" name="givenAnswer"/>
     <button mat-button type="submit" *ngIf="!checked" class="check-button">OK</button></span>
     <ng-container *ngIf="checked">
         <mat-icon *ngIf="correct" class="checked-icon">checkmark</mat-icon>
